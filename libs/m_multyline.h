@@ -1,13 +1,15 @@
+#include <vector>
 
-class point
-{
+#include "m_point.h"
+
+class multyline {
+    
     public:
-        point(): m_posX{0.0}, m_posY{0.0}{};
-        point(double _x, double _y): m_posX{_x}, m_posY{_y}{};
-        ~point() = default;
+        multyline(std::initializer_list<double>); //  point coordinates sequence (x1, y1, x2, y2 ...)
+        virtual ~multyline();
+        inline const point& get(int number);    // without checking out of range
 
     private:
-        double m_posX;
-        double m_posY;
+        std::vector<point> m_points;
 
-}
+};

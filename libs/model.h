@@ -2,19 +2,21 @@
 #include <memory>
 #include <vector>
 
+#include "m_multyline.h"
+
 
 class model 
 {
     public:
         model();
         ~model();
-        void create();
-        void load();
-        void save();
-        void add();
-        void del();
+        void create(); // create new list
+        void load();    // load from file 
+        void save();    // save to file
+        void add(const multyline&);     // add new figure
+        void del();     // delete figure
 
     private:
-        std::vector<std::unique_ptr<>>
+        std::vector<std::unique_ptr<multyline>> m_shapes;
 
-}
+};

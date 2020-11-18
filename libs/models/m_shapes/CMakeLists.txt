@@ -1,0 +1,1 @@
+add_library(m_trangels STATIC m3_basic.h  m3_basic.cpp)

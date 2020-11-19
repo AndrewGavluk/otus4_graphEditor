@@ -1,9 +1,9 @@
 #include "../m_multyline.h"
 
-class Quadrangle : public multyline
+class Quadrangle : public Multyline
 {
     public:
-        Quadrangle(std::initializer_list<double> &points) : multyline(points) {}
+        Quadrangle(std::initializer_list<double> &points) : Multyline(points) {}
         
 };
 

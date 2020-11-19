@@ -1,9 +1,9 @@
 #include "../m_multyline.h"
 
-class Triangle : public multyline
+class Triangle : public Multyline
 {
     public:
-        Triangle(std::initializer_list<double> &points) : multyline(points) {}
+        Triangle(std::initializer_list<double> &points) : Multyline(points) {}
         
 };
 

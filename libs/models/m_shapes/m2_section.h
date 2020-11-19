@@ -1,7 +1,7 @@
 #include "../m_multyline.h"
 
-class Section : public multyline
+class Section : public Multyline
 {
     public:
-        Section(std::initializer_list<double> &points) : multyline(points) {}
+        Section(std::initializer_list<double> &points) : Multyline(points) {}
 };

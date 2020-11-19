@@ -18,6 +18,6 @@ else()
 	target_compile_options(gtest_ PRIVATE -Wall -Wextra -pedantic -Werror)
 endif()
 							
-target_link_libraries(gtest_ gtest pthread lib)
+target_link_libraries(gtest_ gtest pthread)
 							
 add_test(gtest__test1 gtest_)

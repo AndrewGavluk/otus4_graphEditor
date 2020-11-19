@@ -8,5 +8,5 @@ class Canvas: public ViewObject
         void updateCanvas();
     private: 
     // m_pixelFIeld;
-        std::unique_ptr <model> m_model; 
+        std::unique_ptr <Model> m_model; 
 };

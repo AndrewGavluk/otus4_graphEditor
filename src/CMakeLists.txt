@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.2)
 
 add_executable(graph_editor main.cpp)
 set_target_properties(graph_editor PROPERTIES CXX_STANDARD 14 CXX_STANDARD_REQIRED ON)
-target_link_libraries(graph_editor PRIVATE lib)
+#target_link_libraries(graph_editor PRIVATE lib)
 
 if(MSVC)
 	target_compile_options(graph_editor PRIVATE /W4)

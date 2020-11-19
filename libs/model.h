@@ -1,15 +1,18 @@
+
+
 #include <string>
 #include <memory>
 #include <map>
 
 #include "models/m_multyline.h"
 
+#pragma once 
 
-class model 
+class Model
 {
     public:
-        model();
-        ~model();
+        Model();
+        ~Model();
         void create(); // create new list
         void load();    // load from file 
         void save();    // save to file

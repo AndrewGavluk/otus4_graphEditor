@@ -4,11 +4,11 @@
 #include "views/v_button.h"
 #include "views/v_canvas.h"
 
-class view
+class View
 {
-    view() = default;
+    View() = default;
 
     public:
         std::unique_ptr<Canvas> m_canvas;
-        std::vector<std::unique_ptr<multyline>> m_shapes;
-}
+        std::vector<std::unique_ptr<Button>> m_buttons;
+};

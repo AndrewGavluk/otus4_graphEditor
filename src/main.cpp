@@ -1,5 +1,8 @@
-#include "../libs/lib_.h" 
+#include "../libs/model.h" 
+#include "../libs/view.h" 
+
+
 int main(){
-foo();
+
 return 0;
 }

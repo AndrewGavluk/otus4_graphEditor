@@ -49,3 +49,12 @@ class Parallelogram: public Quadrangle
      };
     Parallelogram(drawMethod, std::initializer_list<double> &);
 };
+
+class VersatileQuadrangle: public Quadrangle
+{
+    public:
+    enum drawMethod{
+        point4 // 4 point of Quadrangle corner
+     };
+    VersatileQuadrangle(drawMethod, std::initializer_list<double> &);
+};

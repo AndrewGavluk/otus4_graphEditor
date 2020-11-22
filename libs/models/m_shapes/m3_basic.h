@@ -39,7 +39,7 @@ class IsoscelesTriangle: public Triangle{
 
 // equilateral
 
-class IsoscelesTriangle: public Triangle{ 
+class EquilateralTriangle: public Triangle{ 
     
     enum calcMethod{
         point1side, // coord of 1 point, size of side 
@@ -47,6 +47,6 @@ class IsoscelesTriangle: public Triangle{
         mid3     // coord of middle of triangels and side size
     };
 
-    IsoscelesTriangle(calcMethod, std::initializer_list<double> &); //  3-angel building depends from choosen  calcMethod
+    EquilateralTriangle(calcMethod, std::initializer_list<double> &); //  3-angel building depends from choosen  calcMethod
 
 };

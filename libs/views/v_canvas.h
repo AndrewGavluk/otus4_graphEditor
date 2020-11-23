@@ -12,5 +12,5 @@ class Canvas: public ViewObject
         
     private: 
     // m_pixelFIeld;
-        std::unique_ptr <Model> m_model; 
+        std::shared_ptr <Model> m_model; 
 };

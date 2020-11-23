@@ -11,13 +11,13 @@ class Model
     public:
         Model(){};
         ~Model(){};
-        void create(); // create new list
+        void create();  // create new list
         void load();    // load from file 
         void save();    // save to file
         void add(const Multyline&);     // add new figure
         void del();     // delete figure
         
     private:
-        std::vector<std::unique_ptr<Multyline>> m_buttons;
+        std::vector<std::shared_ptr<Multyline>> m_list;
 
 };

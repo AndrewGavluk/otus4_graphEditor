@@ -17,7 +17,7 @@ class View
         void addButton(const Button&){};
 
     private:
-        std::unique_ptr<MainController> m_controller;
-        std::unique_ptr<Canvas> m_canvas;
-        std::vector<std::unique_ptr<Button>> m_buttons;
+        std::shared_ptr<MainController> m_controller;
+        std::shared_ptr<Canvas> m_canvas;
+        std::vector<std::shared_ptr<Button>> m_buttons;
 };

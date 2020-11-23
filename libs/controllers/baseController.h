@@ -1,17 +1,17 @@
 #pragma once
 #include<list>
+#include<iostream>
 
 #include"../models/m_multyline.h"
 
 class Controller
 {
     public:
-    Controller() = default;
-    virtual ~Controller() = default;
+    Controller(std::shared_ptr<Model>& model) {m_Model = model;};
     
+    virtual ~Controller() = default;
     Controller(Controller&  other);
-    Controller& operator = (Controller&  other) ;
-
+    Controller& operator = (Controller&  other);
     Controller(Controller&&  other);
     Controller& operator = (Controller&&  other) ;
 
@@ -20,7 +20,8 @@ class Controller
     private:
         int m_state;
         std::list<int> m_argLists;
-        std::unique_ptr<Multyline> m_Multyline;
+        std::shared_ptr<Multyline> m_Multyline;
+        std::shared_ptr<Model> m_Model;
 
 };
 
@@ -28,14 +29,54 @@ void Controller::activate(int cursorPosX, int cursorPosY)
 {
     (void)cursorPosX;
     (void)cursorPosY;
+    std::cout << "activate mainController" << std::endl;
 }
 
 class CreateController: public Controller
 {
     public:
-        CreateController(): Controller() {};
+        CreateController(std::shared_ptr<Model>& model): Controller(model) {};
         ~CreateController() = default;
-        void activate(int cursorPosX, int cursorPosY)
+        void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+            std::cout << "activate CreateController" << std::endl;
+        };
+};
+
+class LoadController: public Controller
+{
+    public:
+        LoadController(std::shared_ptr<Model>& model): Controller(model) {};
+        ~LoadController() = default;
+        void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+            std::cout << "activate LoadController" << std::endl;
+        };
+};
+/*
+class SaveController: public Controller
+{
+    public:
+        SaveController(Model& model): Controller(model) {};
+        ~SaveController() = default;
+        void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
+};
+
+class DeleteController: public Controller
+{
+    public:
+        DeleteController() = delete;
+        DeleteController(Model& model): Controller(model) {};
+        ~DeleteController() = default;
+        void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
@@ -47,9 +88,9 @@ class CreateController: public Controller
 class MultylineController: public Controller
 {
     public:
-    MultylineController();
-    virtual ~MultylineController() = default;
-    void activate(int cursorPosX, int cursorPosY)
+    MultylineController(): Controller() {};
+    ~MultylineController() = default;
+    void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
@@ -59,9 +100,9 @@ class MultylineController: public Controller
 class SectionController: public MultylineController
 {
     public:
-    SectionController();
+    SectionController() : MultylineController() {};
     ~SectionController() = default;
-    void activate(int cursorPosX, int cursorPosY)
+    void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
@@ -73,9 +114,9 @@ class SectionController: public MultylineController
 class TriangleController: public MultylineController
 {
     public:
-    TriangleController()= default;
+    TriangleController(): MultylineController() {} ;
     virtual ~TriangleController()= default;
-    void activate(int cursorPosX, int cursorPosY)
+    void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
@@ -85,25 +126,37 @@ class TriangleController: public MultylineController
 class VersatileTriangleController: public TriangleController
 {
     public:
-    VersatileTriangleController();
+    VersatileTriangleController() : TriangleController() {};
     ~VersatileTriangleController() = default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 class IsoscelesTriangleController: public TriangleController
 {
     public:
-    IsoscelesTriangleController();
+    IsoscelesTriangleController() : TriangleController () {};
     ~IsoscelesTriangleController() = default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 class EquilateralTriangleController: public TriangleController
 {
     public:
-    EquilateralTriangleController();
+    EquilateralTriangleController() : TriangleController() {};
     ~EquilateralTriangleController() = default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 // Quadrangle controllers
@@ -111,9 +164,9 @@ class EquilateralTriangleController: public TriangleController
 class QuadrangleController: public MultylineController
 {
     public:
-    QuadrangleController();
+    QuadrangleController() : MultylineController() {};
     virtual ~QuadrangleController()= default;
-    void activate(int cursorPosX, int cursorPosY)
+    void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
@@ -123,33 +176,49 @@ class QuadrangleController: public MultylineController
 class SquareController: public QuadrangleController
 {
     public:
-    SquareController();
+    SquareController() : QuadrangleController() {};
     virtual ~SquareController()= default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 class RectangleController: public QuadrangleController
 {
     public:
-    RectangleController();
+    RectangleController() : QuadrangleController() {};
     virtual ~RectangleController()= default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 class RhombousController: public QuadrangleController
 {
     public:
-    RhombousController();
+    RhombousController() : QuadrangleController() {};
     ~RhombousController()= default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
 class ParallelogramController: public QuadrangleController
 {
     public:
-    ParallelogramController();
+    ParallelogramController() : QuadrangleController() {};
     ~ParallelogramController()= default;
-    void activate(int cursorPosX, int cursorPosY);
+    void activate(int cursorPosX, int cursorPosY) final
+        {
+            (void)cursorPosX;
+            (void)cursorPosY;
+        };
 };
 
-
+*/

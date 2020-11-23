@@ -154,15 +154,16 @@ class IsoscelesTriangleController: public TriangleController
         };
 };
 
-/*class EquilateralTriangleController: public TriangleController
+class EquilateralTriangleController: public TriangleController
 {
     public:
-    EquilateralTriangleController() : TriangleController() {};
+    EquilateralTriangleController(std::shared_ptr<Model>& model): TriangleController(model) {};
     ~EquilateralTriangleController() = default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate EquilateralTriangleController" << std::endl;
         };
 };
 
@@ -171,55 +172,59 @@ class IsoscelesTriangleController: public TriangleController
 class QuadrangleController: public MultylineController
 {
     public:
-    QuadrangleController() : MultylineController() {};
+    QuadrangleController(std::shared_ptr<Model>& model) : MultylineController(model) {};
     virtual ~QuadrangleController()= default;
     void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate QuadrangleController" << std::endl;
         };
 };
 
 class SquareController: public QuadrangleController
 {
     public:
-    SquareController() : QuadrangleController() {};
+    SquareController(std::shared_ptr<Model>& model) : QuadrangleController(model) {};
     virtual ~SquareController()= default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate QuadrangleController" << std::endl;
         };
 };
 
 class RectangleController: public QuadrangleController
 {
     public:
-    RectangleController() : QuadrangleController() {};
+    RectangleController(std::shared_ptr<Model>& model) : QuadrangleController(model) {};
     virtual ~RectangleController()= default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate RectangleController" << std::endl;
         };
 };
 
 class RhombousController: public QuadrangleController
 {
     public:
-    RhombousController() : QuadrangleController() {};
+    RhombousController(std::shared_ptr<Model>& model) : QuadrangleController(model) {};
     ~RhombousController()= default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate RhombousController" << std::endl;
         };
 };
 
 class ParallelogramController: public QuadrangleController
 {
     public:
-    ParallelogramController() : QuadrangleController() {};
+    ParallelogramController(std::shared_ptr<Model>& model) : QuadrangleController(model) {};
     ~ParallelogramController()= default;
     void activate(int cursorPosX, int cursorPosY) final
         {
@@ -228,4 +233,4 @@ class ParallelogramController: public QuadrangleController
         };
 };
 
-*/
+

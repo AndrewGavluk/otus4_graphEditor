@@ -13,30 +13,40 @@ int main(){
     Button *bCreate = new Button(600, 100, 75, 75);
     bCreate->setCaption(std::string("Create new image"));  
     bCreate->setController(std::make_unique<CreateController>(mainModel));
+    mainView.addButton(*bCreate);
     bCreate->onClick();
 
     Button *bLoad = new Button(700, 100, 75, 75);
     bLoad->setCaption(std::string("Load image"));  
     bLoad->setController(std::make_unique<LoadController>(mainModel)); 
+    mainView.addButton(*bLoad);
     bLoad->onClick();
 
-    /*Button bSave(800, 100, 75, 75);
-    bSave.setCaption(std::string("Save image"));  
-    bSave.setController<SaveController>(mainModel);
+    Button *bSave = new Button(800, 100, 75, 75);
+    bSave->setCaption(std::string("Save image"));  
+    bSave->setController(std::make_unique<SaveController>(mainModel));
+    mainView.addButton(*bSave);
+    bSave->onClick();
 
-    Button bDelete(900, 100, 75, 75);
-    bDelete.setCaption(std::string("Delete image"));  
-    bDelete.setController<SaveController>();
+    Button *bDelete = new Button(900, 100, 75, 75);
+    bDelete->setCaption(std::string("Delete image"));  
+    bDelete->setController(std::make_unique<DeleteController>(mainModel));
+    mainView.addButton(*bDelete);
+    bDelete->onClick();
 
-    Button bVersatileTriangle(600, 200, 75, 75);
-    bVersatileTriangle.setCaption(std::string("Vers 3-ang"));  
-    bVersatileTriangle.setController<VersatileTriangleController>();
+    Button * bVersatileTriangle = new Button(600, 200, 75, 75);
+    bVersatileTriangle->setCaption(std::string("Vers 3-ang"));  
+    bVersatileTriangle->setController(std::make_unique<VersatileTriangleController>(mainModel));
+    mainView.addButton(*bVersatileTriangle);
+    bVersatileTriangle->onClick();
 
-    Button bIsoscelesTriangle(700, 200, 75, 75);
-    bIsoscelesTriangle.setCaption(std::string("Iso 3-ang"));  
-    bIsoscelesTriangle.setController<IsoscelesTriangleController>();
+    Button * bIsoscelesTriangle = new Button(700, 200, 75, 75);
+    bIsoscelesTriangle->setCaption(std::string("Iso 3-ang"));  
+    bIsoscelesTriangle->setController(std::make_unique<IsoscelesTriangleController>(mainModel));
+    mainView.addButton(*bIsoscelesTriangle);
+    bIsoscelesTriangle->onClick();
 
-    Button bEquilateralTriangle(800, 200, 75, 75);
+    /*Button bEquilateralTriangle(800, 200, 75, 75);
     bEquilateralTriangle.setCaption(std::string("Equil 3-ang"));  
     bEquilateralTriangle.setController<EquilateralTriangleController>();
 

@@ -57,16 +57,17 @@ class LoadController: public Controller
             std::cout << "activate LoadController" << std::endl;
         };
 };
-/*
+
 class SaveController: public Controller
 {
     public:
-        SaveController(Model& model): Controller(model) {};
+        SaveController(std::shared_ptr<Model>& model): Controller(model) {};
         ~SaveController() = default;
         void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate SaveController" << std::endl;
         };
 };
 
@@ -74,12 +75,13 @@ class DeleteController: public Controller
 {
     public:
         DeleteController() = delete;
-        DeleteController(Model& model): Controller(model) {};
+        DeleteController(std::shared_ptr<Model>& model): Controller(model) {};
         ~DeleteController() = default;
         void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate DeleteController" << std::endl;
         };
 };
 
@@ -88,24 +90,26 @@ class DeleteController: public Controller
 class MultylineController: public Controller
 {
     public:
-    MultylineController(): Controller() {};
+    MultylineController(std::shared_ptr<Model>& model): Controller(model) {};
     ~MultylineController() = default;
     void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate MultylineController" << std::endl;
         };
 };
 
 class SectionController: public MultylineController
 {
     public:
-    SectionController() : MultylineController() {};
+    SectionController(std::shared_ptr<Model>& model): MultylineController(model) {};
     ~SectionController() = default;
     void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate SectionController" << std::endl;
         };
 };
 
@@ -114,40 +118,43 @@ class SectionController: public MultylineController
 class TriangleController: public MultylineController
 {
     public:
-    TriangleController(): MultylineController() {} ;
+    TriangleController(std::shared_ptr<Model>& model): MultylineController(model) {};
     virtual ~TriangleController()= default;
     void activate(int cursorPosX, int cursorPosY) override
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate TriangleController" << std::endl;
         };
 };
 
 class VersatileTriangleController: public TriangleController
 {
     public:
-    VersatileTriangleController() : TriangleController() {};
+    VersatileTriangleController(std::shared_ptr<Model>& model): TriangleController(model) {};
     ~VersatileTriangleController() = default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate VersatileTriangleController" << std::endl;
         };
 };
 
 class IsoscelesTriangleController: public TriangleController
 {
     public:
-    IsoscelesTriangleController() : TriangleController () {};
+    IsoscelesTriangleController(std::shared_ptr<Model>& model): TriangleController(model) {};
     ~IsoscelesTriangleController() = default;
     void activate(int cursorPosX, int cursorPosY) final
         {
             (void)cursorPosX;
             (void)cursorPosY;
+            std::cout << "activate IsoscelesTriangleController" << std::endl;
         };
 };
 
-class EquilateralTriangleController: public TriangleController
+/*class EquilateralTriangleController: public TriangleController
 {
     public:
     EquilateralTriangleController() : TriangleController() {};

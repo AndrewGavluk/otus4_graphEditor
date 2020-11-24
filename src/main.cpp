@@ -8,9 +8,9 @@ int main(){
     std::shared_ptr<Model> mainModel = std::make_shared<Model>();
 
     Canvas mainC(250, 250, 500, 500);
-    mainView->setCanvas(mainC);
+    //mainView->setCanvas(mainC);
 
-    /*auto& bCreate = mainView->addButton(600, 100, 75, 75);
+    auto& bCreate = mainView->addButton(600, 100, 75, 75);
     bCreate->setCaption(std::string("Create new image"));  
     bCreate->setController(std::make_unique<CreateController>(mainModel));
     bCreate->onClick();
@@ -67,7 +67,7 @@ int main(){
     auto&  bMultyLine = mainView->addButton(750, 400, 300, 75);
     bMultyLine->setCaption(std::string("MultyLine"));  
     bMultyLine->setController(std::make_unique<MultylineController>(mainModel));
-    bMultyLine->onClick();*/
+    bMultyLine->onClick();
 
     return 0;
 }

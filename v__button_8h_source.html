@@ -1,0 +1,145 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graphEditor: Исходный файл libs/views/v_button.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphEditor
+   </div>
+   <div id="projectbrief">OTUS Homework 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_da38ed57681c583d79098e5882f1fcb0.html">views</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">v_button.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="v__button_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="view_object_8h.html">viewObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;../controllers/baseController.h&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;../model.h&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;</div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment">* @brief - class Button</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="class_button.html">   10</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_button.html">Button</a> : <span class="keyword">public</span> <a class="code" href="class_view_object.html">ViewObject</a>{</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="class_button.html#ac637a36b28d13a66a0dbce532cec521b">   13</a></span>&#160;        <a class="code" href="class_button.html#ac637a36b28d13a66a0dbce532cec521b">Button</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; p_x, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; p_y, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; s_x, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; s_y) : <a class="code" href="class_view_object.html">ViewObject</a>(p_x, p_y, s_x, s_y){ std::cout &lt;&lt; <span class="stringliteral">&quot;create button\n&quot;</span>;}</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="class_button.html#a2a001eb9c3cc8ae54768a850dd345002">   14</a></span>&#160;        <a class="code" href="class_button.html#a2a001eb9c3cc8ae54768a850dd345002">~Button</a>() { std::cout &lt;&lt; <span class="stringliteral">&quot;create button\n&quot;</span>;  };</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_button.html#ae0fef75f8dd8a25ae122a379ad330400">   15</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_button.html#ae0fef75f8dd8a25ae122a379ad330400">onClick</a>(){<a class="code" href="class_view_object.html#a789d23851e93ed1bd9b1be1bd5544bbd">m_conroller</a>-&gt;activate(0,0);}</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">        * @brief -  caption seter</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">        * @param str - new Caption</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment">        * @return - void</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_button.html#a95e15fb095da12867e001df39cef24c7">   22</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_button.html#a95e15fb095da12867e001df39cef24c7">setCaption</a>(std::string&amp; str) { <a class="code" href="class_button.html#a0d3dca4ac1192e87eab73a0f61baf23a">m_caption</a> = str;};</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_button.html#ae33b92340f6cd5525c65998452b31260">   23</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_button.html#ae33b92340f6cd5525c65998452b31260">setCaption</a>(std::string str) { <a class="code" href="class_button.html#a0d3dca4ac1192e87eab73a0f61baf23a">m_caption</a> = str;};</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="comment">/*</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">        * @brief -  Controller seter</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">        * @param controller - new Controller</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="comment">        * @return - void</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">        */</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_button.html#a2fbc0656e6a74d895365cb4f383b432e">   30</a></span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_button.html#a2fbc0656e6a74d895365cb4f383b432e">setController</a>(std::unique_ptr&lt;Controller&gt; controller) {  <a class="code" href="class_view_object.html#a789d23851e93ed1bd9b1be1bd5544bbd">m_conroller</a> = std::move(controller); }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="class_button.html#a0d3dca4ac1192e87eab73a0f61baf23a">   33</a></span>&#160;        std::string <a class="code" href="class_button.html#a0d3dca4ac1192e87eab73a0f61baf23a">m_caption</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="ttc" id="class_button_html_a2fbc0656e6a74d895365cb4f383b432e"><div class="ttname"><a href="class_button.html#a2fbc0656e6a74d895365cb4f383b432e">Button::setController</a></div><div class="ttdeci">void setController(std::unique_ptr&lt; Controller &gt; controller)</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00030">v_button.h:30</a></div></div>
+<div class="ttc" id="class_button_html_ac637a36b28d13a66a0dbce532cec521b"><div class="ttname"><a href="class_button.html#ac637a36b28d13a66a0dbce532cec521b">Button::Button</a></div><div class="ttdeci">Button(const int &amp;p_x, const int &amp;p_y, const int &amp;s_x, const int &amp;s_y)</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00013">v_button.h:13</a></div></div>
+<div class="ttc" id="class_view_object_html"><div class="ttname"><a href="class_view_object.html">ViewObject</a></div><div class="ttdef"><b>Definition:</b> <a href="view_object_8h_source.html#l00011">viewObject.h:11</a></div></div>
+<div class="ttc" id="class_button_html_ae0fef75f8dd8a25ae122a379ad330400"><div class="ttname"><a href="class_button.html#ae0fef75f8dd8a25ae122a379ad330400">Button::onClick</a></div><div class="ttdeci">void onClick()</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00015">v_button.h:15</a></div></div>
+<div class="ttc" id="class_view_object_html_a789d23851e93ed1bd9b1be1bd5544bbd"><div class="ttname"><a href="class_view_object.html#a789d23851e93ed1bd9b1be1bd5544bbd">ViewObject::m_conroller</a></div><div class="ttdeci">std::unique_ptr&lt; Controller &gt; m_conroller</div><div class="ttdef"><b>Definition:</b> <a href="view_object_8h_source.html#l00038">viewObject.h:38</a></div></div>
+<div class="ttc" id="class_button_html_a0d3dca4ac1192e87eab73a0f61baf23a"><div class="ttname"><a href="class_button.html#a0d3dca4ac1192e87eab73a0f61baf23a">Button::m_caption</a></div><div class="ttdeci">std::string m_caption</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00033">v_button.h:33</a></div></div>
+<div class="ttc" id="class_button_html_a95e15fb095da12867e001df39cef24c7"><div class="ttname"><a href="class_button.html#a95e15fb095da12867e001df39cef24c7">Button::setCaption</a></div><div class="ttdeci">void setCaption(std::string &amp;str)</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00022">v_button.h:22</a></div></div>
+<div class="ttc" id="class_button_html_a2a001eb9c3cc8ae54768a850dd345002"><div class="ttname"><a href="class_button.html#a2a001eb9c3cc8ae54768a850dd345002">Button::~Button</a></div><div class="ttdeci">~Button()</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00014">v_button.h:14</a></div></div>
+<div class="ttc" id="view_object_8h_html"><div class="ttname"><a href="view_object_8h.html">viewObject.h</a></div></div>
+<div class="ttc" id="class_button_html_ae33b92340f6cd5525c65998452b31260"><div class="ttname"><a href="class_button.html#ae33b92340f6cd5525c65998452b31260">Button::setCaption</a></div><div class="ttdeci">void setCaption(std::string str)</div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00023">v_button.h:23</a></div></div>
+<div class="ttc" id="class_button_html"><div class="ttname"><a href="class_button.html">Button</a></div><div class="ttdef"><b>Definition:</b> <a href="v__button_8h_source.html#l00010">v_button.h:10</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

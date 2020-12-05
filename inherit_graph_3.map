@@ -1,0 +1,14 @@
+<map id="Иерархия классов. Графический вид." name="Иерархия классов. Графический вид.">
+<area shape="rect" id="node1" href="$class_multyline.html" title="Multyline" alt="" coords="5,208,80,235"/>
+<area shape="rect" id="node2" href="$class_quadrangle.html" title="Quadrangle" alt="" coords="128,132,216,159"/>
+<area shape="rect" id="node8" href="$class_section.html" title="Section" alt="" coords="139,208,205,235"/>
+<area shape="rect" id="node9" href="$class_triangle.html" title="Triangle" alt="" coords="138,284,206,311"/>
+<area shape="rect" id="node3" href="$class_parallelogram.html" title="Parallelogram" alt="" coords="283,5,384,32"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="Rectangle" alt="" coords="293,56,374,83"/>
+<area shape="rect" id="node5" href="$class_rhombous.html" title="Rhombous" alt="" coords="291,107,376,133"/>
+<area shape="rect" id="node6" href="$class_square.html" title="Square" alt="" coords="302,157,365,184"/>
+<area shape="rect" id="node7" href="$class_versatile_quadrangle.html" title="VersatileQuadrangle" alt="" coords="264,208,403,235"/>
+<area shape="rect" id="node10" href="$class_equilateral_triangle.html" title="EquilateralTriangle" alt="" coords="269,259,398,285"/>
+<area shape="rect" id="node11" href="$class_isosceles_triangle.html" title="IsoscelesTriangle" alt="" coords="271,309,395,336"/>
+<area shape="rect" id="node12" href="$class_versatile_triangle.html" title="VersatileTriangle" alt="" coords="274,360,393,387"/>
+</map>

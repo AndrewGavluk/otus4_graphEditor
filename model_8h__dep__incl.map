@@ -1,0 +1,9 @@
+<map id="libs/model.h" name="libs/model.h">
+<area shape="rect" id="node2" href="$controller_8h.html" title="libs/controller.h" alt="" coords="253,80,363,107"/>
+<area shape="rect" id="node5" href="$v__button_8h.html" title="libs/views/v_button.h" alt="" coords="5,304,149,331"/>
+<area shape="rect" id="node6" href="$v__canvas_8h.html" title="libs/views/v_canvas.h" alt="" coords="237,304,387,331"/>
+<area shape="rect" id="node7" href="$main_8cpp.html" title="src/main.cpp" alt="" coords="350,229,447,256"/>
+<area shape="rect" id="node8" href="$model_8cpp.html" title="libs/model.cpp" alt="" coords="523,80,629,107"/>
+<area shape="rect" id="node3" href="$view_8h.html" title="libs/view.h" alt="" coords="266,155,349,181"/>
+<area shape="rect" id="node4" href="$view_object_8h.html" title="libs/views/viewObject.h" alt="" coords="115,229,273,256"/>
+</map>

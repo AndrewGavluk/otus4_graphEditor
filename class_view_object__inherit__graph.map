@@ -1,0 +1,4 @@
+<map id="ViewObject" name="ViewObject">
+<area shape="rect" id="node2" href="$class_button.html" title="{Button\n|&#45; m_caption\l|+ Button()\l+ ~Button()\l+ onClick()\l+ setCaption()\l+ setCaption()\l+ setController()\l}" alt="" coords="5,235,120,386"/>
+<area shape="rect" id="node3" href="$class_canvas.html" title="{Canvas\n|&#45; m_model\l|+ Canvas()\l+ ~Canvas()\l+ updateCanvas()\l}" alt="" coords="145,257,271,364"/>
+</map>

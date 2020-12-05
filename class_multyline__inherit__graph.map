@@ -1,0 +1,13 @@
+<map id="Multyline" name="Multyline">
+<area shape="rect" id="node2" href="$class_quadrangle.html" title="{Quadrangle\n||+ Quadrangle()\l}" alt="" coords="326,176,433,253"/>
+<area shape="rect" id="node8" href="$class_section.html" title="{Section\n||+ Section()\l}" alt="" coords="561,176,647,253"/>
+<area shape="rect" id="node9" href="$class_triangle.html" title="{Triangle\n||+ Triangle()\l}" alt="" coords="807,176,895,253"/>
+<area shape="rect" id="node3" href="$class_parallelogram.html" title="{Parallelogram\n||+ Parallelogram()\l}" alt="" coords="5,301,125,379"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="{Rectangle\n||+ Rectangle()\l}" alt="" coords="151,301,252,379"/>
+<area shape="rect" id="node5" href="$class_rhombous.html" title="{Rhombous\n||+ Rhombous()\l}" alt="" coords="277,301,381,379"/>
+<area shape="rect" id="node6" href="$class_square.html" title="{Square\n||+ Square()\l}" alt="" coords="405,301,487,379"/>
+<area shape="rect" id="node7" href="$class_versatile_quadrangle.html" title="{VersatileQuadrangle\n||+ VersatileQuadrangle()\l}" alt="" coords="513,301,671,379"/>
+<area shape="rect" id="node10" href="$class_equilateral_triangle.html" title="{EquilateralTriangle\n||&#45; EquilateralTriangle()\l}" alt="" coords="695,301,840,379"/>
+<area shape="rect" id="node11" href="$class_isosceles_triangle.html" title="{IsoscelesTriangle\n||&#45; IsoscelesTriangle()\l}" alt="" coords="865,301,1004,379"/>
+<area shape="rect" id="node12" href="$class_versatile_triangle.html" title="{VersatileTriangle\n||&#45; VersatileTriangle()\l}" alt="" coords="1029,301,1163,379"/>
+</map>

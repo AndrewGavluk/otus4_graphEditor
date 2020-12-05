@@ -1,0 +1,6 @@
+<map id="Triangle" name="Triangle">
+<area shape="rect" id="node3" href="$class_equilateral_triangle.html" title="{EquilateralTriangle\n||&#45; EquilateralTriangle()\l}" alt="" coords="5,301,149,379"/>
+<area shape="rect" id="node4" href="$class_isosceles_triangle.html" title="{IsoscelesTriangle\n||&#45; IsoscelesTriangle()\l}" alt="" coords="174,301,313,379"/>
+<area shape="rect" id="node5" href="$class_versatile_triangle.html" title="{VersatileTriangle\n||&#45; VersatileTriangle()\l}" alt="" coords="338,301,472,379"/>
+<area shape="rect" id="node2" href="$class_multyline.html" title="{Multyline\n|&#45; m_points\l|+ Multyline()\l+ ~Multyline()\l+ get()\l+ set()\l}" alt="" coords="193,6,295,127"/>
+</map>

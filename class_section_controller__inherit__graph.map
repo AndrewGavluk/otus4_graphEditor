@@ -1,0 +1,4 @@
+<map id="SectionController" name="SectionController">
+<area shape="rect" id="node2" href="$class_multyline_controller.html" title="{MultylineController\n||+ MultylineController()\l+ ~MultylineController()\l+ activate()\l}" alt="" coords="5,264,163,371"/>
+<area shape="rect" id="node3" href="$class_controller.html" title="{Controller\n|&#45; m_state\l&#45; m_argLists\l&#45; m_Multyline\l&#45; m_Model\l|+ Controller()\l+ ~Controller()\l+ Controller()\l+ operator=()\l+ Controller()\l+ operator=()\l+ activate()\l}" alt="" coords="31,6,137,215"/>
+</map>

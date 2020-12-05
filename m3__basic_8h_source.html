@@ -1,0 +1,198 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graphEditor: Исходный файл libs/models/m_shapes/m3_basic.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphEditor
+   </div>
+   <div id="projectbrief">OTUS Homework 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_1ced99f11fe286d9a4adc10e2e72a2fb.html">models</a></li><li class="navelem"><a class="el" href="dir_01dc2c6a07d1b9e81c05d6f0c7b0e0c9.html">m_shapes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">m3_basic.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="m3__basic_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../m_multyline.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @brief - Abstract triangle</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_triangle.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_triangle.html">Triangle</a> : <span class="keyword">public</span> <a class="code" href="class_multyline.html">Multyline</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_triangle.html#a2487fe242d63ec49a77d522906d8f7ca">    9</a></span>&#160;        <a class="code" href="class_triangle.html#a2487fe242d63ec49a77d522906d8f7ca">Triangle</a>(std::initializer_list&lt;double&gt; &amp;points) : <a class="code" href="class_multyline.html">Multyline</a>(points) {}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* @brief - Versatile triangle</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">                point1 - coord of 1 point, size of 2 lines and 2 angel of it lines</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">                point2 - coord of 2 point and 2 angels between each side and base</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">                point3 - coord of 3 point</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_versatile_triangle.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_versatile_triangle.html">VersatileTriangle</a>: <span class="keyword">public</span> <a class="code" href="class_triangle.html">Triangle</a>{ </div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    </div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678">   22</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ab3b58d2ea402d320ea64301bc1af59e3">   23</a></span>&#160;        <a class="code" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ab3b58d2ea402d320ea64301bc1af59e3">point1</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678abf098998afad6663f3e41cba9cbca69e">   24</a></span>&#160;        <a class="code" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678abf098998afad6663f3e41cba9cbca69e">point2</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ad47b6fee6cca0e5c5a42d2baf3a81e2b">   25</a></span>&#160;        <a class="code" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ad47b6fee6cca0e5c5a42d2baf3a81e2b">point3</a></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    };</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="class_versatile_triangle.html#aab319a2dd10de4db6eae4adae03e9621">VersatileTriangle</a>(<a class="code" href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;); <span class="comment">//  3-angel building depends from choosen  calcMethod</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;};</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">* @brief - Isosceles triangle</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">                point1sidecoord of 1 point, size of side and angels of side and base of triangel</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="comment">                point1base - coord of 1 point, size of base and angels of sides of triangel</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="comment">                point2side - coord of 2 points, side ends and angel of sides of triangel</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="comment">                point2base - coord of 2 points, base ends and angel of side and base of triangel</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="comment">                point3     - coord of 3 point</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="comment">                midBase    - coord of 1 point - middle of base, length of base, angel of base, triangel high</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html">   42</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_isosceles_triangle.html">IsoscelesTriangle</a>: <span class="keyword">public</span> <a class="code" href="class_triangle.html">Triangle</a>{ </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ff">   44</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaff80e9fadb19575656ecfff8153263c5">   45</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaff80e9fadb19575656ecfff8153263c5">point1side</a>,</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa5a175df028aa43075ab3edfe61cd58dc">   46</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa5a175df028aa43075ab3edfe61cd58dc">point1base</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaca9db2a039060931ad41b18328f036a1">   47</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaca9db2a039060931ad41b18328f036a1">point2side</a>,</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa1977a9bc1cb903b2be31a411f7fcc503">   48</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa1977a9bc1cb903b2be31a411f7fcc503">point2base</a>,</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa24bfe64dc398220e2049528b88ddfeb2">   49</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa24bfe64dc398220e2049528b88ddfeb2">point3</a>,</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa56c68a99c41763d92f5f9d6a78e583a6">   50</a></span>&#160;        <a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa56c68a99c41763d92f5f9d6a78e583a6">midBase</a></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    };</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="class_isosceles_triangle.html#a610b0c6557b9417b5ca8361b1ef4910a">IsoscelesTriangle</a>(<a class="code" href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ff">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;); <span class="comment">//  3-angel building depends from choosen  calcMethod</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="comment">* @brief - Equilateral triangle</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="comment">                point1side - coord of 1 point, size of side </span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">                midBase    - coord of 1 point, middle of base and high</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">                mid3       - coord of middle of triangels and side size</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="class_equilateral_triangle.html">   64</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_equilateral_triangle.html">EquilateralTriangle</a>: <span class="keyword">public</span> <a class="code" href="class_triangle.html">Triangle</a>{ </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207">   66</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207">calcMethod</a>{</div>
+<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207ab22c1ea5ea1ee25fa8afd9400de5c297">   67</a></span>&#160;        <a class="code" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207ab22c1ea5ea1ee25fa8afd9400de5c297">point1side</a>,</div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a031108bfa10203230179e8ba4b5070ab">   68</a></span>&#160;        <a class="code" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a031108bfa10203230179e8ba4b5070ab">midBase</a>,</div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a108152f513b3929e8f8923d156ee59e5">   69</a></span>&#160;        <a class="code" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a108152f513b3929e8f8923d156ee59e5">mid3</a></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="class_equilateral_triangle.html#a62872b42bd79252e40d9f4acf1b347bf">EquilateralTriangle</a>(<a class="code" href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207">calcMethod</a>, std::initializer_list&lt;double&gt; &amp;); <span class="comment">//  3-angel building depends from choosen  calcMethod</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffa5a175df028aa43075ab3edfe61cd58dc"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa5a175df028aa43075ab3edfe61cd58dc">IsoscelesTriangle::point1base</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00046">m3_basic.h:46</a></div></div>
+<div class="ttc" id="class_multyline_html"><div class="ttname"><a href="class_multyline.html">Multyline</a></div><div class="ttdef"><b>Definition:</b> <a href="m__multyline_8h_source.html#l00010">m_multyline.h:10</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html"><div class="ttname"><a href="class_equilateral_triangle.html">EquilateralTriangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00064">m3_basic.h:64</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffaff80e9fadb19575656ecfff8153263c5"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaff80e9fadb19575656ecfff8153263c5">IsoscelesTriangle::point1side</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00045">m3_basic.h:45</a></div></div>
+<div class="ttc" id="class_triangle_html"><div class="ttname"><a href="class_triangle.html">Triangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00006">m3_basic.h:6</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html_a62872b42bd79252e40d9f4acf1b347bf"><div class="ttname"><a href="class_equilateral_triangle.html#a62872b42bd79252e40d9f4acf1b347bf">EquilateralTriangle::EquilateralTriangle</a></div><div class="ttdeci">EquilateralTriangle(calcMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffa24bfe64dc398220e2049528b88ddfeb2"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa24bfe64dc398220e2049528b88ddfeb2">IsoscelesTriangle::point3</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00049">m3_basic.h:49</a></div></div>
+<div class="ttc" id="class_versatile_triangle_html_ac4d324c8cbe82814fe769899adfc8678abf098998afad6663f3e41cba9cbca69e"><div class="ttname"><a href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678abf098998afad6663f3e41cba9cbca69e">VersatileTriangle::point2</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00024">m3_basic.h:24</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ff"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ff">IsoscelesTriangle::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00044">m3_basic.h:44</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html_a9ddc7a249c2c1cc8f4c5fabc0638f207a108152f513b3929e8f8923d156ee59e5"><div class="ttname"><a href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a108152f513b3929e8f8923d156ee59e5">EquilateralTriangle::mid3</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00069">m3_basic.h:69</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html_a9ddc7a249c2c1cc8f4c5fabc0638f207ab22c1ea5ea1ee25fa8afd9400de5c297"><div class="ttname"><a href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207ab22c1ea5ea1ee25fa8afd9400de5c297">EquilateralTriangle::point1side</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00067">m3_basic.h:67</a></div></div>
+<div class="ttc" id="class_versatile_triangle_html_ac4d324c8cbe82814fe769899adfc8678ab3b58d2ea402d320ea64301bc1af59e3"><div class="ttname"><a href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ab3b58d2ea402d320ea64301bc1af59e3">VersatileTriangle::point1</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00023">m3_basic.h:23</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffaca9db2a039060931ad41b18328f036a1"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffaca9db2a039060931ad41b18328f036a1">IsoscelesTriangle::point2side</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00047">m3_basic.h:47</a></div></div>
+<div class="ttc" id="class_multyline_html_ad75d7bb224267d0d7b4c40fd72a1d920"><div class="ttname"><a href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">Multyline::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m__multyline_8h_source.html#l00022">m_multyline.h:22</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html_a9ddc7a249c2c1cc8f4c5fabc0638f207a031108bfa10203230179e8ba4b5070ab"><div class="ttname"><a href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207a031108bfa10203230179e8ba4b5070ab">EquilateralTriangle::midBase</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00068">m3_basic.h:68</a></div></div>
+<div class="ttc" id="class_equilateral_triangle_html_a9ddc7a249c2c1cc8f4c5fabc0638f207"><div class="ttname"><a href="class_equilateral_triangle.html#a9ddc7a249c2c1cc8f4c5fabc0638f207">EquilateralTriangle::calcMethod</a></div><div class="ttdeci">calcMethod</div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00066">m3_basic.h:66</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffa56c68a99c41763d92f5f9d6a78e583a6"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa56c68a99c41763d92f5f9d6a78e583a6">IsoscelesTriangle::midBase</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00050">m3_basic.h:50</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html_a610b0c6557b9417b5ca8361b1ef4910a"><div class="ttname"><a href="class_isosceles_triangle.html#a610b0c6557b9417b5ca8361b1ef4910a">IsoscelesTriangle::IsoscelesTriangle</a></div><div class="ttdeci">IsoscelesTriangle(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_isosceles_triangle_html_ae25b85b6ba464d8f3394eeb7b39215ffa1977a9bc1cb903b2be31a411f7fcc503"><div class="ttname"><a href="class_isosceles_triangle.html#ae25b85b6ba464d8f3394eeb7b39215ffa1977a9bc1cb903b2be31a411f7fcc503">IsoscelesTriangle::point2base</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00048">m3_basic.h:48</a></div></div>
+<div class="ttc" id="class_versatile_triangle_html"><div class="ttname"><a href="class_versatile_triangle.html">VersatileTriangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00020">m3_basic.h:20</a></div></div>
+<div class="ttc" id="class_triangle_html_a2487fe242d63ec49a77d522906d8f7ca"><div class="ttname"><a href="class_triangle.html#a2487fe242d63ec49a77d522906d8f7ca">Triangle::Triangle</a></div><div class="ttdeci">Triangle(std::initializer_list&lt; double &gt; &amp;points)</div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00009">m3_basic.h:9</a></div></div>
+<div class="ttc" id="class_versatile_triangle_html_ac4d324c8cbe82814fe769899adfc8678ad47b6fee6cca0e5c5a42d2baf3a81e2b"><div class="ttname"><a href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678ad47b6fee6cca0e5c5a42d2baf3a81e2b">VersatileTriangle::point3</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00025">m3_basic.h:25</a></div></div>
+<div class="ttc" id="class_versatile_triangle_html_aab319a2dd10de4db6eae4adae03e9621"><div class="ttname"><a href="class_versatile_triangle.html#aab319a2dd10de4db6eae4adae03e9621">VersatileTriangle::VersatileTriangle</a></div><div class="ttdeci">VersatileTriangle(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_versatile_triangle_html_ac4d324c8cbe82814fe769899adfc8678"><div class="ttname"><a href="class_versatile_triangle.html#ac4d324c8cbe82814fe769899adfc8678">VersatileTriangle::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00022">m3_basic.h:22</a></div></div>
+<div class="ttc" id="class_isosceles_triangle_html"><div class="ttname"><a href="class_isosceles_triangle.html">IsoscelesTriangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m3__basic_8h_source.html#l00042">m3_basic.h:42</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

@@ -1,0 +1,4 @@
+<map id="Rhombous" name="Rhombous">
+<area shape="rect" id="node2" href="$class_quadrangle.html" title="{Quadrangle\n||+ Quadrangle()\l}" alt="" coords="5,176,112,253"/>
+<area shape="rect" id="node3" href="$class_multyline.html" title="{Multyline\n|&#45; m_points\l|+ Multyline()\l+ ~Multyline()\l+ get()\l+ set()\l}" alt="" coords="7,6,109,127"/>
+</map>

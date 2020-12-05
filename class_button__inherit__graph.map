@@ -1,0 +1,3 @@
+<map id="Button" name="Button">
+<area shape="rect" id="node2" href="$class_view_object.html" title="{ViewObject\n|# m_conroller\l&#45; pos_x\l&#45; pos_y\l&#45; size_x\l&#45; size_y\l|+ ViewObject()\l+ ~ViewObject()\l+ setController()\l+ onClick()\l}" alt="" coords="4,6,120,186"/>
+</map>

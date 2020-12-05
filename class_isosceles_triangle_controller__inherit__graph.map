@@ -1,0 +1,5 @@
+<map id="IsoscelesTriangleController" name="IsoscelesTriangleController">
+<area shape="rect" id="node2" href="$class_triangle_controller.html" title="{TriangleController\n||+ TriangleController()\l+ ~TriangleController()\l+ activate()\l}" alt="" coords="33,419,185,525"/>
+<area shape="rect" id="node3" href="$class_multyline_controller.html" title="{MultylineController\n||+ MultylineController()\l+ ~MultylineController()\l+ activate()\l}" alt="" coords="30,264,188,371"/>
+<area shape="rect" id="node4" href="$class_controller.html" title="{Controller\n|&#45; m_state\l&#45; m_argLists\l&#45; m_Multyline\l&#45; m_Model\l|+ Controller()\l+ ~Controller()\l+ Controller()\l+ operator=()\l+ Controller()\l+ operator=()\l+ activate()\l}" alt="" coords="56,6,163,215"/>
+</map>

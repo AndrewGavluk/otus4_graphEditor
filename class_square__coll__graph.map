@@ -1,0 +1,4 @@
+<map id="Square" name="Square">
+<area shape="rect" id="node2" href="$class_quadrangle.html" title="{Quadrangle\n||+ Quadrangle()\l}" alt="" coords="6,320,113,397"/>
+<area shape="rect" id="node3" href="$class_multyline.html" title="{Multyline\n||+ Multyline()\l+ ~Multyline()\l+ get()\l+ set()\l}" alt="" coords="9,147,111,269"/>
+</map>

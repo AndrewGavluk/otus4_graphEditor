@@ -1,0 +1,7 @@
+<map id="TriangleController" name="TriangleController">
+<area shape="rect" id="node4" href="$class_equilateral_triangle_controller.html" title="{EquilateralTriangleController\n||+ EquilateralTriangleController()\l+ ~EquilateralTriangleController()\l+ activate()\l}" alt="" coords="5,573,219,680"/>
+<area shape="rect" id="node5" href="$class_isosceles_triangle_controller.html" title="{IsoscelesTriangleController\n||+ IsoscelesTriangleController()\l+ ~IsoscelesTriangleController()\l+ activate()\l}" alt="" coords="243,573,451,680"/>
+<area shape="rect" id="node6" href="$class_versatile_triangle_controller.html" title="{VersatileTriangleController\n||+ VersatileTriangleController()\l+ ~VersatileTriangleController()\l+ activate()\l}" alt="" coords="475,573,677,680"/>
+<area shape="rect" id="node2" href="$class_multyline_controller.html" title="{MultylineController\n||+ MultylineController()\l+ ~MultylineController()\l+ activate()\l}" alt="" coords="267,264,425,371"/>
+<area shape="rect" id="node3" href="$class_controller.html" title="{Controller\n|&#45; m_state\l&#45; m_argLists\l&#45; m_Multyline\l&#45; m_Model\l|+ Controller()\l+ ~Controller()\l+ Controller()\l+ operator=()\l+ Controller()\l+ operator=()\l+ activate()\l}" alt="" coords="293,6,400,215"/>
+</map>

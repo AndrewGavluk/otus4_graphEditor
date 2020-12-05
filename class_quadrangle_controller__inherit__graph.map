@@ -1,0 +1,8 @@
+<map id="QuadrangleController" name="QuadrangleController">
+<area shape="rect" id="node4" href="$class_parallelogram_controller.html" title="{ParallelogramController\n||+ ParallelogramController()\l+ ~ParallelogramController()\l+ activate()\l}" alt="" coords="5,573,189,680"/>
+<area shape="rect" id="node5" href="$class_rectangle_controller.html" title="{RectangleController\n||+ RectangleController()\l+ ~RectangleController()\l+ activate()\l}" alt="" coords="215,573,379,680"/>
+<area shape="rect" id="node6" href="$class_rhombous_controller.html" title="{RhombousController\n||+ RhombousController()\l+ ~RhombousController()\l+ activate()\l}" alt="" coords="405,573,573,680"/>
+<area shape="rect" id="node7" href="$class_square_controller.html" title="{SquareController\n||+ SquareController()\l+ ~SquareController()\l+ activate()\l}" alt="" coords="599,573,745,680"/>
+<area shape="rect" id="node2" href="$class_multyline_controller.html" title="{MultylineController\n||+ MultylineController()\l+ ~MultylineController()\l+ activate()\l}" alt="" coords="314,264,472,371"/>
+<area shape="rect" id="node3" href="$class_controller.html" title="{Controller\n|&#45; m_state\l&#45; m_argLists\l&#45; m_Multyline\l&#45; m_Model\l|+ Controller()\l+ ~Controller()\l+ Controller()\l+ operator=()\l+ Controller()\l+ operator=()\l+ activate()\l}" alt="" coords="340,6,447,215"/>
+</map>

@@ -1,0 +1,369 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graphEditor: Класс ViewObject</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphEditor
+   </div>
+   <div id="projectbrief">OTUS Homework 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li class="current"><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li><a href="classes.html"><span>Алфавитный&#160;указатель&#160;классов</span></a></li>
+      <li><a href="inherits.html"><span>Иерархия&#160;классов</span></a></li>
+      <li><a href="functions.html"><span>Члены&#160;классов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pro-attribs">Защищенные данные</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="class_view_object-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle">
+<div class="title">Класс ViewObject</div>  </div>
+</div><!--header-->
+<div class="contents">
+
+<p><code>#include &lt;<a class="el" href="view_object_8h_source.html">viewObject.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф наследования:ViewObject:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_view_object__inherit__graph.png" border="0" usemap="#_view_object_inherit__map" alt="Inheritance graph"/></div>
+<map name="_view_object_inherit__map" id="_view_object_inherit__map">
+<area shape="rect" id="node2" href="class_button.html" title="{Button\n|&#45; m_caption\l|+ Button()\l+ ~Button()\l+ onClick()\l+ setCaption()\l+ setCaption()\l+ setController()\l}" alt="" coords="5,235,120,386"/><area shape="rect" id="node3" href="class_canvas.html" title="{Canvas\n|&#45; m_model\l|+ Canvas()\l+ ~Canvas()\l+ updateCanvas()\l}" alt="" coords="145,257,271,364"/></map>
+</div>
+<div class="dynheader">
+Граф связей класса ViewObject:</div>
+<div class="dyncontent">
+<div class="center"><img src="class_view_object__coll__graph.png" border="0" usemap="#_view_object_coll__map" alt="Collaboration graph"/></div>
+<map name="_view_object_coll__map" id="_view_object_coll__map">
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:ad27ccab8cf4c80453b30662db99791fe"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#ad27ccab8cf4c80453b30662db99791fe">ViewObject</a> (const int p_x, const int p_y, const int s_x, const int s_y)</td></tr>
+<tr class="separator:ad27ccab8cf4c80453b30662db99791fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64ed22a30924b733a2ea3d4d4768a2eb"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a64ed22a30924b733a2ea3d4d4768a2eb">~ViewObject</a> ()</td></tr>
+<tr class="separator:a64ed22a30924b733a2ea3d4d4768a2eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6eea2ef2da8adbf3dd619c11d98f17f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a6eea2ef2da8adbf3dd619c11d98f17f5">setController</a> (<a class="el" href="class_controller.html">Controller</a> &amp;)</td></tr>
+<tr class="separator:a6eea2ef2da8adbf3dd619c11d98f17f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55bd898aab839a0729a8f82a7ddd4c66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a55bd898aab839a0729a8f82a7ddd4c66">onClick</a> ()</td></tr>
+<tr class="separator:a55bd898aab839a0729a8f82a7ddd4c66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
+Защищенные данные</h2></td></tr>
+<tr class="memitem:a789d23851e93ed1bd9b1be1bd5544bbd"><td class="memItemLeft" align="right" valign="top">std::unique_ptr&lt; <a class="el" href="class_controller.html">Controller</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a789d23851e93ed1bd9b1be1bd5544bbd">m_conroller</a></td></tr>
+<tr class="separator:a789d23851e93ed1bd9b1be1bd5544bbd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a8759396c35582ac724b320133b9be326"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a8759396c35582ac724b320133b9be326">pos_x</a></td></tr>
+<tr class="separator:a8759396c35582ac724b320133b9be326"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a3348dc8dc5d381b319075ad7ea44d9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a0a3348dc8dc5d381b319075ad7ea44d9">pos_y</a></td></tr>
+<tr class="separator:a0a3348dc8dc5d381b319075ad7ea44d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a484420a1d615725e2d0cdb84d18bcb0a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a484420a1d615725e2d0cdb84d18bcb0a">size_x</a></td></tr>
+<tr class="separator:a484420a1d615725e2d0cdb84d18bcb0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5373493aa3161f641a30d999790fa06f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_view_object.html#a5373493aa3161f641a30d999790fa06f">size_y</a></td></tr>
+<tr class="separator:a5373493aa3161f641a30d999790fa06f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock">
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00011">11</a></p>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a class="anchor" id="ad27ccab8cf4c80453b30662db99791fe"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">ViewObject::ViewObject </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>p_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>p_y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>s_x</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>s_y</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00022">22</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a64ed22a30924b733a2ea3d4d4768a2eb"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">virtual ViewObject::~ViewObject </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00023">23</a></p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a class="anchor" id="a55bd898aab839a0729a8f82a7ddd4c66"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ViewObject::onClick </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a class="anchor" id="a6eea2ef2da8adbf3dd619c11d98f17f5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ViewObject::setController </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_controller.html">Controller</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a class="anchor" id="a789d23851e93ed1bd9b1be1bd5544bbd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::unique_ptr&lt;<a class="el" href="class_controller.html">Controller</a>&gt; ViewObject::m_conroller</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00038">38</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a8759396c35582ac724b320133b9be326"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ViewObject::pos_x</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00040">40</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a0a3348dc8dc5d381b319075ad7ea44d9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ViewObject::pos_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00041">41</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a484420a1d615725e2d0cdb84d18bcb0a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ViewObject::size_x</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00042">42</a></p>
+
+</div>
+</div>
+<a class="anchor" id="a5373493aa3161f641a30d999790fa06f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ViewObject::size_y</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>См. определение в файле <a class="el" href="view_object_8h_source.html">viewObject.h</a> строка <a class="el" href="view_object_8h_source.html#l00043">43</a></p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li>libs/views/<a class="el" href="view_object_8h_source.html">viewObject.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

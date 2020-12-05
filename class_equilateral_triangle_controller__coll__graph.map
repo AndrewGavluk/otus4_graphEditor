@@ -1,0 +1,5 @@
+<map id="EquilateralTriangleController" name="EquilateralTriangleController">
+<area shape="rect" id="node2" href="$class_triangle_controller.html" title="{TriangleController\n||+ TriangleController()\l+ ~TriangleController()\l+ activate()\l}" alt="" coords="172,520,324,627"/>
+<area shape="rect" id="node3" href="$class_multyline_controller.html" title="{MultylineController\n||+ MultylineController()\l+ ~MultylineController()\l+ activate()\l}" alt="" coords="169,363,327,469"/>
+<area shape="rect" id="node4" href="$class_controller.html" title="{Controller\n||+ Controller()\l+ ~Controller()\l+ Controller()\l+ operator=()\l+ Controller()\l+ operator=()\l+ activate()\l}" alt="" coords="195,147,301,312"/>
+</map>

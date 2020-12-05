@@ -1,0 +1,225 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graphEditor: Исходный файл libs/models/m_shapes/m4_basic.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphEditor
+   </div>
+   <div id="projectbrief">OTUS Homework 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_1ced99f11fe286d9a4adc10e2e72a2fb.html">models</a></li><li class="navelem"><a class="el" href="dir_01dc2c6a07d1b9e81c05d6f0c7b0e0c9.html">m_shapes</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">m4_basic.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="m4__basic_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#include &quot;../m_multyline.h&quot;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">* @brief - Abstract Quadrangle</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_quadrangle.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_quadrangle.html">Quadrangle</a> : <span class="keyword">public</span> <a class="code" href="class_multyline.html">Multyline</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_quadrangle.html#a8b4e36be41d7934614c333776c052736">    9</a></span>&#160;        <a class="code" href="class_quadrangle.html#a8b4e36be41d7934614c333776c052736">Quadrangle</a>(std::initializer_list&lt;double&gt; &amp;points) : <a class="code" href="class_multyline.html">Multyline</a>(points) {}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        </div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;};</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment">* @brief - Square</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">                side - 2 point at 1 side</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">                diagonal - 2 point at diagonal</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_square.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_square.html">Square</a> : <span class="keyword">public</span> <a class="code" href="class_quadrangle.html">Quadrangle</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13">   22</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13aaf7215e74b713a4de0eeda3912b2eb82">   23</a></span>&#160;        <a class="code" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13aaf7215e74b713a4de0eeda3912b2eb82">side</a>,</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13a52ec280a7edeecdef1ebc0439b83e5ac">   24</a></span>&#160;        <a class="code" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13a52ec280a7edeecdef1ebc0439b83e5ac">diagonal</a> </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;     };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_square.html#adf29bfeb59b78ed77afef908a3bc2745">Square</a>(<a class="code" href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;};</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="comment">* @brief - Rectangle</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">                point3 -  3 point of rectangle corner</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="comment">                point2 -  2 point at diagonal and stze of smaller side</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="comment">                point1 -  1 point, size of 2 sides, and angel</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="class_rectangle.html">   36</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rectangle.html">Rectangle</a>: <span class="keyword">public</span> <a class="code" href="class_quadrangle.html">Quadrangle</a></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462f">   39</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa0899aa004a2bdd5ca0a442c05a2fdb70">   40</a></span>&#160;        <a class="code" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa0899aa004a2bdd5ca0a442c05a2fdb70">point3</a>,</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa6083fe468bbf9e5a1b0cc8faaf4579f3">   41</a></span>&#160;        <a class="code" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa6083fe468bbf9e5a1b0cc8faaf4579f3">point2</a>, </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fab936647558e60d8993ec9758f1bee652">   42</a></span>&#160;        <a class="code" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fab936647558e60d8993ec9758f1bee652">point1</a></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;     };</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_rectangle.html#a436ec626a20dd8355999fc7d61475c1b">Rectangle</a>(<a class="code" href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462f">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">* @brief - Rhombous</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="comment">                point3 -  3 point of rhombous corner</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">                point2 -  2 point at biger diagonal and stze of smaller diagonal</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">                point1 -  1 point, size of 2 sides, and angel</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="class_rhombous.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_rhombous.html">Rhombous</a>: <span class="keyword">public</span> <a class="code" href="class_quadrangle.html">Quadrangle</a></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058">   57</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a3afc60fab182c11851e7bb8870f77352">   58</a></span>&#160;        <a class="code" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a3afc60fab182c11851e7bb8870f77352">point3</a>, </div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a16d219134eda7717ac1aa16061ece158">   59</a></span>&#160;        <a class="code" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a16d219134eda7717ac1aa16061ece158">point2</a>, </div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a28041197087f875dd594d5d04b4c43ab">   60</a></span>&#160;        <a class="code" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a28041197087f875dd594d5d04b4c43ab">point1</a></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;     };</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="class_rhombous.html#a1abf251c711268cd2a8f7669f4bbc9a3">Rhombous</a>(<a class="code" href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">* @brief - Rhombous</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">                point3 -  3 point of rhombous corner</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">                point2 -  2 point at biger diagonal and stze of smaller diagonal</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">                point1 -  1 point, size of 2 sides, and angel</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="class_parallelogram.html">   72</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_parallelogram.html">Parallelogram</a>: <span class="keyword">public</span> <a class="code" href="class_quadrangle.html">Quadrangle</a></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;{</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0">   75</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a8da001730608d2059c34abe87159e366">   76</a></span>&#160;        <a class="code" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a8da001730608d2059c34abe87159e366">point3</a>,</div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1120a1b801f1081028e8345091b6c0b6">   77</a></span>&#160;        <a class="code" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1120a1b801f1081028e8345091b6c0b6">point2</a>,</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1038e30d507cb7f800b0b3698312be0e">   78</a></span>&#160;        <a class="code" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1038e30d507cb7f800b0b3698312be0e">point1</a></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;     };</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <a class="code" href="class_parallelogram.html#a430c0f9f5ed2cf85e4c3c2e961be7c2d">Parallelogram</a>(<a class="code" href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;);</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="comment">* @brief - VersatileQuadrangle</span></div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;<span class="comment">            build method:</span></div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;<span class="comment">                point4 -  4 point of Quadrangle corner</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="class_versatile_quadrangle.html">   88</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_versatile_quadrangle.html">VersatileQuadrangle</a>: <span class="keyword">public</span> <a class="code" href="class_quadrangle.html">Quadrangle</a></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;{</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37">   91</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">drawMethod</a>{</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37aaae92cad588cdacc57f810f244da32e0">   92</a></span>&#160;        <a class="code" href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37aaae92cad588cdacc57f810f244da32e0">point4</a> <span class="comment">// 4 point of Quadrangle corner</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;     };</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_versatile_quadrangle.html#a5740f0b17fdca9d9de0dfe52e58412ea">VersatileQuadrangle</a>(<a class="code" href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37">drawMethod</a>, std::initializer_list&lt;double&gt; &amp;);</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
+<div class="ttc" id="class_rectangle_html_a436ec626a20dd8355999fc7d61475c1b"><div class="ttname"><a href="class_rectangle.html#a436ec626a20dd8355999fc7d61475c1b">Rectangle::Rectangle</a></div><div class="ttdeci">Rectangle(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_multyline_html"><div class="ttname"><a href="class_multyline.html">Multyline</a></div><div class="ttdef"><b>Definition:</b> <a href="m__multyline_8h_source.html#l00010">m_multyline.h:10</a></div></div>
+<div class="ttc" id="class_rectangle_html_a89fbf9e00116333aaa820d66f940462fa6083fe468bbf9e5a1b0cc8faaf4579f3"><div class="ttname"><a href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa6083fe468bbf9e5a1b0cc8faaf4579f3">Rectangle::point2</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00041">m4_basic.h:41</a></div></div>
+<div class="ttc" id="class_rectangle_html_a89fbf9e00116333aaa820d66f940462fab936647558e60d8993ec9758f1bee652"><div class="ttname"><a href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fab936647558e60d8993ec9758f1bee652">Rectangle::point1</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00042">m4_basic.h:42</a></div></div>
+<div class="ttc" id="class_rhombous_html"><div class="ttname"><a href="class_rhombous.html">Rhombous</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00054">m4_basic.h:54</a></div></div>
+<div class="ttc" id="class_square_html_afb936005821ce22a9ecfbd2b3a0cfb13a52ec280a7edeecdef1ebc0439b83e5ac"><div class="ttname"><a href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13a52ec280a7edeecdef1ebc0439b83e5ac">Square::diagonal</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00024">m4_basic.h:24</a></div></div>
+<div class="ttc" id="class_parallelogram_html_aeae756ed193db05daf0aeb3d0a0966b0a1038e30d507cb7f800b0b3698312be0e"><div class="ttname"><a href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1038e30d507cb7f800b0b3698312be0e">Parallelogram::point1</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00078">m4_basic.h:78</a></div></div>
+<div class="ttc" id="class_rhombous_html_ac90a281d31799c97af62a4b63a664058a3afc60fab182c11851e7bb8870f77352"><div class="ttname"><a href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a3afc60fab182c11851e7bb8870f77352">Rhombous::point3</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00058">m4_basic.h:58</a></div></div>
+<div class="ttc" id="class_square_html"><div class="ttname"><a href="class_square.html">Square</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00019">m4_basic.h:19</a></div></div>
+<div class="ttc" id="class_rectangle_html"><div class="ttname"><a href="class_rectangle.html">Rectangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00036">m4_basic.h:36</a></div></div>
+<div class="ttc" id="class_square_html_adf29bfeb59b78ed77afef908a3bc2745"><div class="ttname"><a href="class_square.html#adf29bfeb59b78ed77afef908a3bc2745">Square::Square</a></div><div class="ttdeci">Square(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_rectangle_html_a89fbf9e00116333aaa820d66f940462fa0899aa004a2bdd5ca0a442c05a2fdb70"><div class="ttname"><a href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462fa0899aa004a2bdd5ca0a442c05a2fdb70">Rectangle::point3</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00040">m4_basic.h:40</a></div></div>
+<div class="ttc" id="class_square_html_afb936005821ce22a9ecfbd2b3a0cfb13aaf7215e74b713a4de0eeda3912b2eb82"><div class="ttname"><a href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13aaf7215e74b713a4de0eeda3912b2eb82">Square::side</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00023">m4_basic.h:23</a></div></div>
+<div class="ttc" id="class_parallelogram_html_aeae756ed193db05daf0aeb3d0a0966b0"><div class="ttname"><a href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0">Parallelogram::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00075">m4_basic.h:75</a></div></div>
+<div class="ttc" id="class_parallelogram_html_a430c0f9f5ed2cf85e4c3c2e961be7c2d"><div class="ttname"><a href="class_parallelogram.html#a430c0f9f5ed2cf85e4c3c2e961be7c2d">Parallelogram::Parallelogram</a></div><div class="ttdeci">Parallelogram(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_parallelogram_html_aeae756ed193db05daf0aeb3d0a0966b0a1120a1b801f1081028e8345091b6c0b6"><div class="ttname"><a href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a1120a1b801f1081028e8345091b6c0b6">Parallelogram::point2</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00077">m4_basic.h:77</a></div></div>
+<div class="ttc" id="class_versatile_quadrangle_html_a5740f0b17fdca9d9de0dfe52e58412ea"><div class="ttname"><a href="class_versatile_quadrangle.html#a5740f0b17fdca9d9de0dfe52e58412ea">VersatileQuadrangle::VersatileQuadrangle</a></div><div class="ttdeci">VersatileQuadrangle(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+<div class="ttc" id="class_parallelogram_html_aeae756ed193db05daf0aeb3d0a0966b0a8da001730608d2059c34abe87159e366"><div class="ttname"><a href="class_parallelogram.html#aeae756ed193db05daf0aeb3d0a0966b0a8da001730608d2059c34abe87159e366">Parallelogram::point3</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00076">m4_basic.h:76</a></div></div>
+<div class="ttc" id="class_versatile_quadrangle_html_aa897c08c7c9faf1813e7df4194a71e37"><div class="ttname"><a href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37">VersatileQuadrangle::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00091">m4_basic.h:91</a></div></div>
+<div class="ttc" id="class_versatile_quadrangle_html_aa897c08c7c9faf1813e7df4194a71e37aaae92cad588cdacc57f810f244da32e0"><div class="ttname"><a href="class_versatile_quadrangle.html#aa897c08c7c9faf1813e7df4194a71e37aaae92cad588cdacc57f810f244da32e0">VersatileQuadrangle::point4</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00092">m4_basic.h:92</a></div></div>
+<div class="ttc" id="class_multyline_html_ad75d7bb224267d0d7b4c40fd72a1d920"><div class="ttname"><a href="class_multyline.html#ad75d7bb224267d0d7b4c40fd72a1d920">Multyline::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m__multyline_8h_source.html#l00022">m_multyline.h:22</a></div></div>
+<div class="ttc" id="class_rhombous_html_ac90a281d31799c97af62a4b63a664058a16d219134eda7717ac1aa16061ece158"><div class="ttname"><a href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a16d219134eda7717ac1aa16061ece158">Rhombous::point2</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00059">m4_basic.h:59</a></div></div>
+<div class="ttc" id="class_rectangle_html_a89fbf9e00116333aaa820d66f940462f"><div class="ttname"><a href="class_rectangle.html#a89fbf9e00116333aaa820d66f940462f">Rectangle::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00039">m4_basic.h:39</a></div></div>
+<div class="ttc" id="class_rhombous_html_ac90a281d31799c97af62a4b63a664058"><div class="ttname"><a href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058">Rhombous::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00057">m4_basic.h:57</a></div></div>
+<div class="ttc" id="class_rhombous_html_ac90a281d31799c97af62a4b63a664058a28041197087f875dd594d5d04b4c43ab"><div class="ttname"><a href="class_rhombous.html#ac90a281d31799c97af62a4b63a664058a28041197087f875dd594d5d04b4c43ab">Rhombous::point1</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00060">m4_basic.h:60</a></div></div>
+<div class="ttc" id="class_square_html_afb936005821ce22a9ecfbd2b3a0cfb13"><div class="ttname"><a href="class_square.html#afb936005821ce22a9ecfbd2b3a0cfb13">Square::drawMethod</a></div><div class="ttdeci">drawMethod</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00022">m4_basic.h:22</a></div></div>
+<div class="ttc" id="class_quadrangle_html_a8b4e36be41d7934614c333776c052736"><div class="ttname"><a href="class_quadrangle.html#a8b4e36be41d7934614c333776c052736">Quadrangle::Quadrangle</a></div><div class="ttdeci">Quadrangle(std::initializer_list&lt; double &gt; &amp;points)</div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00009">m4_basic.h:9</a></div></div>
+<div class="ttc" id="class_versatile_quadrangle_html"><div class="ttname"><a href="class_versatile_quadrangle.html">VersatileQuadrangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00088">m4_basic.h:88</a></div></div>
+<div class="ttc" id="class_parallelogram_html"><div class="ttname"><a href="class_parallelogram.html">Parallelogram</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00072">m4_basic.h:72</a></div></div>
+<div class="ttc" id="class_quadrangle_html"><div class="ttname"><a href="class_quadrangle.html">Quadrangle</a></div><div class="ttdef"><b>Definition:</b> <a href="m4__basic_8h_source.html#l00006">m4_basic.h:6</a></div></div>
+<div class="ttc" id="class_rhombous_html_a1abf251c711268cd2a8f7669f4bbc9a3"><div class="ttname"><a href="class_rhombous.html#a1abf251c711268cd2a8f7669f4bbc9a3">Rhombous::Rhombous</a></div><div class="ttdeci">Rhombous(drawMethod, std::initializer_list&lt; double &gt; &amp;)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

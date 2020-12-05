@@ -1,0 +1,8 @@
+<map id="Quadrangle" name="Quadrangle">
+<area shape="rect" id="node3" href="$class_parallelogram.html" title="{Parallelogram\n||+ Parallelogram()\l}" alt="" coords="5,301,125,379"/>
+<area shape="rect" id="node4" href="$class_rectangle.html" title="{Rectangle\n||+ Rectangle()\l}" alt="" coords="151,301,252,379"/>
+<area shape="rect" id="node5" href="$class_rhombous.html" title="{Rhombous\n||+ Rhombous()\l}" alt="" coords="277,301,381,379"/>
+<area shape="rect" id="node6" href="$class_square.html" title="{Square\n||+ Square()\l}" alt="" coords="405,301,487,379"/>
+<area shape="rect" id="node7" href="$class_versatile_quadrangle.html" title="{VersatileQuadrangle\n||+ VersatileQuadrangle()\l}" alt="" coords="513,301,671,379"/>
+<area shape="rect" id="node2" href="$class_multyline.html" title="{Multyline\n|&#45; m_points\l|+ Multyline()\l+ ~Multyline()\l+ get()\l+ set()\l}" alt="" coords="278,6,380,127"/>
+</map>

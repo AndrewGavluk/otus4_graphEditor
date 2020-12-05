@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>graphEditor: Исходный файл libs/views/v_canvas.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">graphEditor
+   </div>
+   <div id="projectbrief">OTUS Homework 4</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Перечисления</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Элементы перечислений</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_6719ab1f1f7655efc2fa43f7eb574fd1.html">libs</a></li><li class="navelem"><a class="el" href="dir_da38ed57681c583d79098e5882f1fcb0.html">views</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">v_canvas.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="v__canvas_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;memory&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../model.h&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="view_object_8h.html">viewObject.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno"><a class="line" href="class_canvas.html">    6</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_canvas.html">Canvas</a>: <span class="keyword">public</span> <a class="code" href="class_view_object.html">ViewObject</a></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="class_canvas.html#a90a539fde4aa87ad1d09ca220df17c99">    9</a></span>&#160;        <a class="code" href="class_canvas.html#a90a539fde4aa87ad1d09ca220df17c99">Canvas</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; p_x, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; p_y, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; s_x, <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; s_y) : <a class="code" href="class_view_object.html">ViewObject</a>(p_x, p_y, s_x, s_y){}</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;        <a class="code" href="class_canvas.html#ac64895ae1cdfc39c58e95097873e861e">~Canvas</a>() = <span class="keywordflow">default</span>;</div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="class_canvas.html#a8514b56f7bee6b267dd12b9b11aa97d6">updateCanvas</a>();</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>: </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="comment">// m_pixelFIeld;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="class_canvas.html#a4bae0f13adb834323d28fd1a5884b6e0">   15</a></span>&#160;        std::shared_ptr &lt;Model&gt; <a class="code" href="class_canvas.html#a4bae0f13adb834323d28fd1a5884b6e0">m_model</a>; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="ttc" id="class_canvas_html"><div class="ttname"><a href="class_canvas.html">Canvas</a></div><div class="ttdef"><b>Definition:</b> <a href="v__canvas_8h_source.html#l00006">v_canvas.h:6</a></div></div>
+<div class="ttc" id="class_canvas_html_a90a539fde4aa87ad1d09ca220df17c99"><div class="ttname"><a href="class_canvas.html#a90a539fde4aa87ad1d09ca220df17c99">Canvas::Canvas</a></div><div class="ttdeci">Canvas(const int &amp;p_x, const int &amp;p_y, const int &amp;s_x, const int &amp;s_y)</div><div class="ttdef"><b>Definition:</b> <a href="v__canvas_8h_source.html#l00009">v_canvas.h:9</a></div></div>
+<div class="ttc" id="class_canvas_html_ac64895ae1cdfc39c58e95097873e861e"><div class="ttname"><a href="class_canvas.html#ac64895ae1cdfc39c58e95097873e861e">Canvas::~Canvas</a></div><div class="ttdeci">~Canvas()=default</div></div>
+<div class="ttc" id="class_view_object_html"><div class="ttname"><a href="class_view_object.html">ViewObject</a></div><div class="ttdef"><b>Definition:</b> <a href="view_object_8h_source.html#l00011">viewObject.h:11</a></div></div>
+<div class="ttc" id="class_canvas_html_a4bae0f13adb834323d28fd1a5884b6e0"><div class="ttname"><a href="class_canvas.html#a4bae0f13adb834323d28fd1a5884b6e0">Canvas::m_model</a></div><div class="ttdeci">std::shared_ptr&lt; Model &gt; m_model</div><div class="ttdef"><b>Definition:</b> <a href="v__canvas_8h_source.html#l00015">v_canvas.h:15</a></div></div>
+<div class="ttc" id="view_object_8h_html"><div class="ttname"><a href="view_object_8h.html">viewObject.h</a></div></div>
+<div class="ttc" id="class_canvas_html_a8514b56f7bee6b267dd12b9b11aa97d6"><div class="ttname"><a href="class_canvas.html#a8514b56f7bee6b267dd12b9b11aa97d6">Canvas::updateCanvas</a></div><div class="ttdeci">void updateCanvas()</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>

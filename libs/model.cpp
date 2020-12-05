@@ -12,4 +12,4 @@ void Model::save(){};    // save to file
         
 void Model::add(const Multyline&){};     // add new figure
         
-void Model::del(){};     // delete figure
+void Model::del(const Multyline&){};     // delete figure

@@ -8,7 +8,7 @@ int main(){
     std::shared_ptr<Model> mainModel = std::make_shared<Model>();
 
     Canvas mainC(250, 250, 500, 500);
-    //mainView->setCanvas(mainC);
+    mainView->setCanvas(mainC);
 
     auto& bCreate = mainView->addButton(600, 100, 75, 75);
     bCreate->setCaption(std::string("Create new image"));  

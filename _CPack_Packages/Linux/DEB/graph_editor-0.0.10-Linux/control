@@ -1,0 +1,9 @@
+Package: graph_editor
+Version: 0.0.10
+Section: devel
+Priority: optional
+Architecture: amd64
+Installed-Size: 336
+Maintainer: gavl.andr96@gmail.com
+Description: graph_editor built using CMake
+

@@ -1,0 +1,1 @@
+/usr/bin/g++-7    -rdynamic CMakeFiles/graph_editor.dir/main.cpp.o  -o graph_editor 

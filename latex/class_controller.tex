@@ -1,0 +1,166 @@
+\hypertarget{class_controller}{\section{Класс Controller}
+\label{class_controller}\index{Controller@{Controller}}
+}
+
+
+{\ttfamily \#include $<$base\-Controller.\-h$>$}
+
+
+
+Граф наследования\-:Controller\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса Controller\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_controller__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_controller_ad2ce690a1bfa8ec80e9785ee8b475592}{Controller} (std\-::shared\-\_\-ptr$<$ \hyperlink{class_model}{Model} $>$ \&model)
+\item 
+virtual \hyperlink{class_controller_a8d16a7a97c266dc0d5aa5685c4dcdd89}{$\sim$\-Controller} ()=default
+\item 
+\hyperlink{class_controller_abae5d6be388bd2499f1ffb01a4c60f2d}{Controller} (\hyperlink{class_controller}{Controller} \&other)
+\item 
+\hyperlink{class_controller}{Controller} \& \hyperlink{class_controller_a74985f0bdefdb90a5d31e195684aac97}{operator=} (\hyperlink{class_controller}{Controller} \&other)
+\item 
+\hyperlink{class_controller_a8b96e5f809484c765067f551e948b32a}{Controller} (\hyperlink{class_controller}{Controller} \&\&other)
+\item 
+\hyperlink{class_controller}{Controller} \& \hyperlink{class_controller_a9b263660c90a6d2f7e65ccadaa46fd2d}{operator=} (\hyperlink{class_controller}{Controller} \&\&other)
+\item 
+virtual void \hyperlink{class_controller_a4cc69a630011f49efb0c221d617af633}{activate} (int cursor\-Pos\-X, int cursor\-Pos\-Y)=0
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_controller_a8b090b5fb29c22eb74d6bab24713ce4e}{m\-\_\-state}
+\item 
+std\-::list$<$ int $>$ \hyperlink{class_controller_acaa49bf804d980462e65b7c9df8228ad}{m\-\_\-arg\-Lists}
+\item 
+std\-::shared\-\_\-ptr$<$ \hyperlink{class_multyline}{Multyline} $>$ \hyperlink{class_controller_a58633f078953ff4035c7fd1fc14ba01c}{m\-\_\-\-Multyline}
+\item 
+std\-::shared\-\_\-ptr$<$ \hyperlink{class_model}{Model} $>$ \hyperlink{class_controller_a5190c0bded8b780fed2baaf56737b9cb}{m\-\_\-\-Model}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле base\-Controller.\-h строка 7
+
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_controller_ad2ce690a1bfa8ec80e9785ee8b475592}{\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\subsubsection[{Controller}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\-Controller (
+\begin{DoxyParamCaption}
+\item[{std\-::shared\-\_\-ptr$<$ {\bf Model} $>$ \&}]{model}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_controller_ad2ce690a1bfa8ec80e9785ee8b475592}
+
+
+См. определение в файле base\-Controller.\-h строка 10
+
+\hypertarget{class_controller_a8d16a7a97c266dc0d5aa5685c4dcdd89}{\index{Controller@{Controller}!$\sim$\-Controller@{$\sim$\-Controller}}
+\index{$\sim$\-Controller@{$\sim$\-Controller}!Controller@{Controller}}
+\subsubsection[{$\sim$\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}virtual Controller\-::$\sim$\-Controller (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}}\label{class_controller_a8d16a7a97c266dc0d5aa5685c4dcdd89}
+\hypertarget{class_controller_abae5d6be388bd2499f1ffb01a4c60f2d}{\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\subsubsection[{Controller}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\-Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_controller_abae5d6be388bd2499f1ffb01a4c60f2d}
+\hypertarget{class_controller_a8b96e5f809484c765067f551e948b32a}{\index{Controller@{Controller}!Controller@{Controller}}
+\index{Controller@{Controller}!Controller@{Controller}}
+\subsubsection[{Controller}]{\setlength{\rightskip}{0pt plus 5cm}Controller\-::\-Controller (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} \&\&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_controller_a8b96e5f809484c765067f551e948b32a}
+
+
+\subsection{Методы}
+\hypertarget{class_controller_a4cc69a630011f49efb0c221d617af633}{\index{Controller@{Controller}!activate@{activate}}
+\index{activate@{activate}!Controller@{Controller}}
+\subsubsection[{activate}]{\setlength{\rightskip}{0pt plus 5cm}void Controller\-::activate (
+\begin{DoxyParamCaption}
+\item[{int}]{cursor\-Pos\-X, }
+\item[{int}]{cursor\-Pos\-Y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{class_controller_a4cc69a630011f49efb0c221d617af633}
+
+
+Замещается в \hyperlink{class_parallelogram_controller_a42022d7939a32ef5fcdced235edad018}{Parallelogram\-Controller}, \hyperlink{class_rhombous_controller_a9e839123b8a65d202fb898b6233694b2}{Rhombous\-Controller}, \hyperlink{class_rectangle_controller_ac0d209fecccce59cf9270f7f6facbc06}{Rectangle\-Controller}, \hyperlink{class_square_controller_a169d59d75dd023ed352e7722a3bd2dcc}{Square\-Controller}, \hyperlink{class_quadrangle_controller_a2a38c3afba85014f27041e002cfc7950}{Quadrangle\-Controller}, \hyperlink{class_equilateral_triangle_controller_ac8822ad6419def097652fc8a88426898}{Equilateral\-Triangle\-Controller}, \hyperlink{class_isosceles_triangle_controller_ac060b7bdfdc3c5fc078147e14e31415b}{Isosceles\-Triangle\-Controller}, \hyperlink{class_versatile_triangle_controller_a0d553f2393114a789f3e3964b97dad66}{Versatile\-Triangle\-Controller}, \hyperlink{class_triangle_controller_ab86471e4de39ae99bc6198583d173c7b}{Triangle\-Controller}, \hyperlink{class_section_controller_ac42bb71f574f336a79a2e0a739fbad24}{Section\-Controller}, \hyperlink{class_multyline_controller_a5a574a5ca48d2a7e62201e9415a61afe}{Multyline\-Controller}, \hyperlink{class_delete_controller_a77305d1d2c625ff61b61f97a8beffd03}{Delete\-Controller}, \hyperlink{class_save_controller_a82d91ea99368d4cbce96a24d988a8c2b}{Save\-Controller}, \hyperlink{class_load_controller_aa9fc9b866ea0abda7d8d766ffa9256f4}{Load\-Controller} и \hyperlink{class_create_controller_abc72a0a1947c1dd5eec2cdfd84f481c5}{Create\-Controller}.
+
+
+
+См. определение в файле base\-Controller.\-h строка 28
+
+\hypertarget{class_controller_a74985f0bdefdb90a5d31e195684aac97}{\index{Controller@{Controller}!operator=@{operator=}}
+\index{operator=@{operator=}!Controller@{Controller}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Controller}\& Controller\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} \&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_controller_a74985f0bdefdb90a5d31e195684aac97}
+\hypertarget{class_controller_a9b263660c90a6d2f7e65ccadaa46fd2d}{\index{Controller@{Controller}!operator=@{operator=}}
+\index{operator=@{operator=}!Controller@{Controller}}
+\subsubsection[{operator=}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Controller}\& Controller\-::operator= (
+\begin{DoxyParamCaption}
+\item[{{\bf Controller} \&\&}]{other}
+\end{DoxyParamCaption}
+)}}\label{class_controller_a9b263660c90a6d2f7e65ccadaa46fd2d}
+
+
+\subsection{Данные класса}
+\hypertarget{class_controller_acaa49bf804d980462e65b7c9df8228ad}{\index{Controller@{Controller}!m\-\_\-arg\-Lists@{m\-\_\-arg\-Lists}}
+\index{m\-\_\-arg\-Lists@{m\-\_\-arg\-Lists}!Controller@{Controller}}
+\subsubsection[{m\-\_\-arg\-Lists}]{\setlength{\rightskip}{0pt plus 5cm}std\-::list$<$int$>$ Controller\-::m\-\_\-arg\-Lists\hspace{0.3cm}{\ttfamily [private]}}}\label{class_controller_acaa49bf804d980462e65b7c9df8228ad}
+
+
+См. определение в файле base\-Controller.\-h строка 22
+
+\hypertarget{class_controller_a5190c0bded8b780fed2baaf56737b9cb}{\index{Controller@{Controller}!m\-\_\-\-Model@{m\-\_\-\-Model}}
+\index{m\-\_\-\-Model@{m\-\_\-\-Model}!Controller@{Controller}}
+\subsubsection[{m\-\_\-\-Model}]{\setlength{\rightskip}{0pt plus 5cm}std\-::shared\-\_\-ptr$<${\bf Model}$>$ Controller\-::m\-\_\-\-Model\hspace{0.3cm}{\ttfamily [private]}}}\label{class_controller_a5190c0bded8b780fed2baaf56737b9cb}
+
+
+См. определение в файле base\-Controller.\-h строка 24
+
+\hypertarget{class_controller_a58633f078953ff4035c7fd1fc14ba01c}{\index{Controller@{Controller}!m\-\_\-\-Multyline@{m\-\_\-\-Multyline}}
+\index{m\-\_\-\-Multyline@{m\-\_\-\-Multyline}!Controller@{Controller}}
+\subsubsection[{m\-\_\-\-Multyline}]{\setlength{\rightskip}{0pt plus 5cm}std\-::shared\-\_\-ptr$<${\bf Multyline}$>$ Controller\-::m\-\_\-\-Multyline\hspace{0.3cm}{\ttfamily [private]}}}\label{class_controller_a58633f078953ff4035c7fd1fc14ba01c}
+
+
+См. определение в файле base\-Controller.\-h строка 23
+
+\hypertarget{class_controller_a8b090b5fb29c22eb74d6bab24713ce4e}{\index{Controller@{Controller}!m\-\_\-state@{m\-\_\-state}}
+\index{m\-\_\-state@{m\-\_\-state}!Controller@{Controller}}
+\subsubsection[{m\-\_\-state}]{\setlength{\rightskip}{0pt plus 5cm}int Controller\-::m\-\_\-state\hspace{0.3cm}{\ttfamily [private]}}}\label{class_controller_a8b090b5fb29c22eb74d6bab24713ce4e}
+
+
+См. определение в файле base\-Controller.\-h строка 21
+
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+libs/controllers/\hyperlink{base_controller_8h}{base\-Controller.\-h}\end{DoxyCompactItemize}

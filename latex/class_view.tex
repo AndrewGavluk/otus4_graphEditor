@@ -1,0 +1,140 @@
+\hypertarget{class_view}{\section{Класс View}
+\label{class_view}\index{View@{View}}
+}
+
+
+{\ttfamily \#include $<$view.\-h$>$}
+
+
+
+Граф связей класса View\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_view__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_view_a44ad60a768422d3fa8fbd7576950080a}{View} ()
+\item 
+\hyperlink{class_view_ad0dc854db9aabbea98a334dec89f785c}{$\sim$\-View} ()
+\item 
+void \hyperlink{class_view_a081268f0c9e7145c8dbb731ff3fa59a8}{set\-Controller} (const \hyperlink{class_main_controller}{Main\-Controller} \&)
+\item 
+void \hyperlink{class_view_a5f2dfc50df34d5001d640ae4f344cf81}{set\-Canvas} (const \hyperlink{class_canvas}{Canvas} \&)
+\item 
+std\-::unique\-\_\-ptr$<$ \hyperlink{class_button}{Button} $>$ \& \hyperlink{class_view_a39afbf509a2dfbcdd3b893d080f08fd4}{add\-Button} (const int \&p\-\_\-x, const int \&p\-\_\-y, const int \&s\-\_\-x, const int \&s\-\_\-y)
+\end{DoxyCompactItemize}
+\subsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\-::shared\-\_\-ptr$<$ \hyperlink{class_main_controller}{Main\-Controller} $>$ \hyperlink{class_view_ade0c47df7c220ec738183dce973fcc2d}{m\-\_\-controller}
+\item 
+std\-::shared\-\_\-ptr$<$ \hyperlink{class_canvas}{Canvas} $>$ \hyperlink{class_view_a54ba1f3b0fa09cedb0267e1c95b12a6e}{m\-\_\-canvas}
+\item 
+std\-::vector$<$ std\-::unique\-\_\-ptr\\*
+$<$ \hyperlink{class_button}{Button} $>$ $>$ \hyperlink{class_view_a628fc37c28703cfe87c9e903a48709dc}{m\-\_\-buttons}
+\end{DoxyCompactItemize}
+
+
+\subsection{Подробное описание}
+
+
+См. определение в файле view.\-h строка 13
+
+
+
+\subsection{Конструктор(ы)}
+\hypertarget{class_view_a44ad60a768422d3fa8fbd7576950080a}{\index{View@{View}!View@{View}}
+\index{View@{View}!View@{View}}
+\subsubsection[{View}]{\setlength{\rightskip}{0pt plus 5cm}View\-::\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_view_a44ad60a768422d3fa8fbd7576950080a}
+
+
+См. определение в файле view.\-h строка 16
+
+\hypertarget{class_view_ad0dc854db9aabbea98a334dec89f785c}{\index{View@{View}!$\sim$\-View@{$\sim$\-View}}
+\index{$\sim$\-View@{$\sim$\-View}!View@{View}}
+\subsubsection[{$\sim$\-View}]{\setlength{\rightskip}{0pt plus 5cm}View\-::$\sim$\-View (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_view_ad0dc854db9aabbea98a334dec89f785c}
+
+
+См. определение в файле view.\-h строка 17
+
+
+
+\subsection{Методы}
+\hypertarget{class_view_a39afbf509a2dfbcdd3b893d080f08fd4}{\index{View@{View}!add\-Button@{add\-Button}}
+\index{add\-Button@{add\-Button}!View@{View}}
+\subsubsection[{add\-Button}]{\setlength{\rightskip}{0pt plus 5cm}std\-::unique\-\_\-ptr$<${\bf Button}$>$\& View\-::add\-Button (
+\begin{DoxyParamCaption}
+\item[{const int \&}]{p\-\_\-x, }
+\item[{const int \&}]{p\-\_\-y, }
+\item[{const int \&}]{s\-\_\-x, }
+\item[{const int \&}]{s\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_view_a39afbf509a2dfbcdd3b893d080f08fd4}
+
+
+См. определение в файле view.\-h строка 41
+
+\hypertarget{class_view_a5f2dfc50df34d5001d640ae4f344cf81}{\index{View@{View}!set\-Canvas@{set\-Canvas}}
+\index{set\-Canvas@{set\-Canvas}!View@{View}}
+\subsubsection[{set\-Canvas}]{\setlength{\rightskip}{0pt plus 5cm}void View\-::set\-Canvas (
+\begin{DoxyParamCaption}
+\item[{const {\bf Canvas} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_view_a5f2dfc50df34d5001d640ae4f344cf81}
+
+
+См. определение в файле view.\-h строка 31
+
+\hypertarget{class_view_a081268f0c9e7145c8dbb731ff3fa59a8}{\index{View@{View}!set\-Controller@{set\-Controller}}
+\index{set\-Controller@{set\-Controller}!View@{View}}
+\subsubsection[{set\-Controller}]{\setlength{\rightskip}{0pt plus 5cm}void View\-::set\-Controller (
+\begin{DoxyParamCaption}
+\item[{const {\bf Main\-Controller} \&}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_view_a081268f0c9e7145c8dbb731ff3fa59a8}
+
+
+См. определение в файле view.\-h строка 24
+
+
+
+\subsection{Данные класса}
+\hypertarget{class_view_a628fc37c28703cfe87c9e903a48709dc}{\index{View@{View}!m\-\_\-buttons@{m\-\_\-buttons}}
+\index{m\-\_\-buttons@{m\-\_\-buttons}!View@{View}}
+\subsubsection[{m\-\_\-buttons}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$std\-::unique\-\_\-ptr$<${\bf Button}$>$ $>$ View\-::m\-\_\-buttons\hspace{0.3cm}{\ttfamily [private]}}}\label{class_view_a628fc37c28703cfe87c9e903a48709dc}
+
+
+См. определение в файле view.\-h строка 48
+
+\hypertarget{class_view_a54ba1f3b0fa09cedb0267e1c95b12a6e}{\index{View@{View}!m\-\_\-canvas@{m\-\_\-canvas}}
+\index{m\-\_\-canvas@{m\-\_\-canvas}!View@{View}}
+\subsubsection[{m\-\_\-canvas}]{\setlength{\rightskip}{0pt plus 5cm}std\-::shared\-\_\-ptr$<${\bf Canvas}$>$ View\-::m\-\_\-canvas\hspace{0.3cm}{\ttfamily [private]}}}\label{class_view_a54ba1f3b0fa09cedb0267e1c95b12a6e}
+
+
+См. определение в файле view.\-h строка 47
+
+\hypertarget{class_view_ade0c47df7c220ec738183dce973fcc2d}{\index{View@{View}!m\-\_\-controller@{m\-\_\-controller}}
+\index{m\-\_\-controller@{m\-\_\-controller}!View@{View}}
+\subsubsection[{m\-\_\-controller}]{\setlength{\rightskip}{0pt plus 5cm}std\-::shared\-\_\-ptr$<${\bf Main\-Controller}$>$ View\-::m\-\_\-controller\hspace{0.3cm}{\ttfamily [private]}}}\label{class_view_ade0c47df7c220ec738183dce973fcc2d}
+
+
+См. определение в файле view.\-h строка 43
+
+
+
+Объявления и описания членов класса находятся в файле\-:\begin{DoxyCompactItemize}
+\item 
+libs/\hyperlink{view_8h}{view.\-h}\end{DoxyCompactItemize}

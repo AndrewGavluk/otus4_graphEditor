@@ -1,0 +1,1 @@
+add_library(baseController STATIC baseController.cpp baseController.h)

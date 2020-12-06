@@ -1,0 +1,17 @@
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/install/strip.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/install/local.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/install.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/list_install_components.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/package.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/rebuild_cache.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/package_source.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/CMakeFiles/edit_cache.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/install/strip.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/install/local.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/install.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/list_install_components.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/rebuild_cache.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/graph_editor.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/package.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/package_source.dir
+/home/travis/build/AndrewGavluk/otus4_graphEditor/src/CMakeFiles/edit_cache.dir
